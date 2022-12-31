@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="Test" size="1.000000 1.000000" />
-  </Tracking>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Audio1" size="1.000000 0.500000"/>
+        <ImageTarget name="Test" size="1.000000 1.000000"/>
+        <ImageTarget name="Audio.Right" size="5.000000 5.000000"/>
+        <ImageTarget name="Audio.Left" size="5.000000 5.000000"/>
+        <ImageTarget name="Audio.Back" size="10.000000 5.000000"/>
+        <ImageTarget name="Audio.Top" size="10.000000 5.000000"/>
+        <ImageTarget name="Audio.Front" size="10.000000 5.000000"/>
+        <ImageTarget name="Audio.Bottom" size="10.000000 5.000000"/>
+        <MultiTarget name="Audio">
+            <Part name="Audio.Left" translation="-5.0 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="Audio.Right" translation="5.0 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="Audio.Front" translation="0 0 2.5" rotation="AD: 1 0 0 0"/>
+            <Part name="Audio.Back" translation="0 0 -2.5" rotation="AD: 0 1 0 180"/>
+            <Part name="Audio.Top" translation="0 2.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="Audio.Bottom" translation="0 -2.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
 </QCARConfig>
